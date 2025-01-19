@@ -49,6 +49,8 @@ img {
 
 @media screen and (max-width : 500px) {
     body {
+         background-color: #0f172a;
+        justify-items: center;
         margin-top: 100px;
     }
     
