@@ -27,6 +27,9 @@
             updateScore();
             console.log(score);
     ">reset skor</button>
+    <button class="AutoPlay" onclick="
+    AutoPlay ()
+    ">AutoPlay</button>
     <script>
         let score = JSON.parse(localStorage.getItem('score')) || {
                 win : 0,
