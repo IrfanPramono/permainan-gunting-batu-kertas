@@ -108,6 +108,22 @@
             }
             return ComputerPick
         }
+
+        let autoplay = false;
+        let intervalId;
+
+        function AutoPlay () {
+            if (!autoplay){
+                intervalId = setInterval (function (){
+                const PlayerMove = computerMove();
+                gameplay (PlayerMove);
+            }, 1500)
+            autoplay = true;
+            } else {
+                clearInterval (intervalId);
+                autoplay = false;
+            }
+        }
     </script>
 </body>
 </html>
